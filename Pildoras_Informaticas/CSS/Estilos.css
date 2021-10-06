@@ -1,0 +1,38 @@
+#Contenedor{
+    background-color: black;
+}
+
+#Titulo_1{
+    background-color: rgb(255, 2, 2);
+    color: white;
+}
+
+#Titulo_2{
+    color: aliceblue;
+}
+
+#Pf_1{
+    background-color: rgb(10, 174, 250);
+    color: aliceblue;
+}
+#Pf_2{
+    background-color: yellow;
+}
+
+.Color_Parrafos{
+    background-color: green;
+}
+
+
+
+
+/* ESTILOS PARA "Segunda Guerra Mundial */
+#Titulo_SG_1{
+    background-color: black;
+    color: white;
+}
+
+.Pf_SG_Color{
+    background-color: rgba(255, 255, 255, 0.795);
+    color: rgb(5, 0, 0);
+}
