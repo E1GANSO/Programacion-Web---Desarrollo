@@ -72,3 +72,21 @@ for (Recor_Cocina of cocina) {
     document.write(Recor_Cocina + "<br>");
 }
 */
+
+
+
+
+
+/*
+        EJERCICIO 2
+
+    A) Un joven muy afortunado logró ganar el primer premio de la loteria, 
+    este jóven, decide hacer una fiesta para celebrar y compra una maquina que solo
+    permita acceder a los mayores de edad, además:
+
+        - Dejar pasar a los mayores de edad
+        - La primera persona que entre despues de 2 a.m. no paga.
+*/
+
+
+}

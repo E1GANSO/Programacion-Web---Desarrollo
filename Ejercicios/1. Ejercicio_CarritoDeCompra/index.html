@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_Carrito Compra</title>
+    <script src="./Carrito_Basico.JS"></script>
+</head>
+<body>
+    <div>
+        <h1>Carrito de compra</h1>
+        <!--AGREGANDO TARJETA NVIDIA-->
+        <button onclick="Agregar_Compra({
+            Nombre : 'TARJETA NVIDIA GTX 990 TI',
+            Marca : 'NVIDIA',
+            Precio : 34500,
+            id : '4',
+            Descripcion : 'Con ventilacion, distriuidor MSI'})">Agregar NVIDIA</button>
+        
+        <!--AGREGANDO PC-->
+        <button onclick="Agregar_Compra({
+            Nombre : 'PC GAMER',
+            Marca : 'HP',
+            Precio : 17005400,
+            id : '1',
+            Descripcion : 'CPU negro, gabinete especial'})">Agregar PC</button>
+
+        <!--AGREGANDO MONITOR-->
+        <button onclick="Agregar_Compra({
+            Nombre : 'Monitor LED ULTRA HD',
+            Marca : 'SAMSUNG',
+            Precio : 35000,
+            id : '2',
+            Descripcion : 'Monitor pantalla curva, color blanco'})">Agregar Monitor</button>
+
+        <button onclick="Mostrar_Carrito()">Mostara Carrito</button>
+    </div>
+</body>
+</html>
