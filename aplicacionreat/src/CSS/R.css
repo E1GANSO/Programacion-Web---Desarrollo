@@ -1,0 +1,12 @@
+#imagen_Ico{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.item{
+    padding: 20px 0;
+    border-top: 1px solid;
+    /*margin-bottom: 9px;
+    border-bottom: 1px solid black;*/
+}
