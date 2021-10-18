@@ -1,7 +1,5 @@
 
 import ItemProduct from './ItemProduct';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/esm/Col';
 
 function GridProduct(){
     
