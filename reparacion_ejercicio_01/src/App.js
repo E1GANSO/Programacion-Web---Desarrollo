@@ -2,10 +2,19 @@ import Container from 'react-bootstrap/Container';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Components/Header';
 import Products from './Components/Products';
-import ItemProduct from './Components/ItemProduct';
-import {BrowserRouter} from 'react-router-dom';
-import GridProducts from './Components/GridProduct'
+import {BrowserRouter } from 'react-router-dom';
 import MisRoutes from './MisRutas';
+import GridProduct from './Components/GridProduct';
+
+/*
+function App() {
+  return (
+    <Container fluid>
+      <GridProduct/>
+    </Container>
+  );
+}
+*/
 
 function App() {
   return (
@@ -18,5 +27,7 @@ function App() {
     </Container>
   );
 }
+
+
 
 export default App;

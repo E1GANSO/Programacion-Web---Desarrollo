@@ -1,5 +1,8 @@
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemProduct from './ItemProduct';
+import React from 'react';
+
+
 
 function GridProduct(){
     
@@ -65,14 +68,25 @@ function GridProduct(){
             marca: "El ñato",
             precio: 3500
         }
+        
     ];
-    
+
+    /*
     return (
-        List_Product.map(e=> (<ItemProduct nombre = {e.nombre}  marca = {e.marca} precio = {e.precio}/>))
+        <div className="col-md-4"> {List_Product.map(e=> (<ItemProduct nombre = {e.nombre}  marca = {e.marca} precio = {e.precio}/>))} </div>
+    );  
+    */
+
+    return(
+        <section>
+            <div className="row">
+                {List_Product.map(e=> (<div className="col-4"> <ItemProduct nombre = {e.nombre}  marca = {e.marca} precio = {e.precio}/></div>))}
+            </div>
+        </section>
     );
 
     }
-    
+
 
 
 export default GridProduct;
