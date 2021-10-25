@@ -32,3 +32,11 @@
 #Color_Text{
     color: white;
 }
+#Boton_Eliminar{
+    color: red;
+}
+
+#MiTablaPersonalizada th{
+    width: 130px;
+    overflow: auto;
+}

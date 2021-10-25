@@ -1,33 +1,32 @@
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/esm/Col';
 import Button from 'react-bootstrap/Button';
+import ListCart from '../pages/ListCart';
 
-function ItemProduct({nombre, marca, precio}){
+function ItemProduct({id, nombre, marca, precio}){
 
     return(
         <div className="row" id="Color_Row">
             <div className="row">
-                <Col>
+                <div className ="col">
                     <p>Nombre: {nombre}</p>
-                </Col>
-                <Col>
+                </div>
+                <div className ="col">
                     <p>Marca: {marca}</p>
-                </Col>
+                </div>
             </div>
             <div className="row">
-                <Col>
+                <div className ="col">
                     <h5>Precio ${precio}</h5>
-                </Col>
+                </div>
             </div>
             <div className="row">
-                <Col>
+                <div className ="col">
                     <Button id="Color_Text_Button">Detalles</Button>
-                </Col>
-                <Col>
-                    <Button variant="primary">Agregar al carrito</Button>
-                </Col>
+                </div>
+                <div className ="col">
+                    <Button  variant="primary" name = {<ListCart id={id} nombre={nombre} marca={marca} precio={precio} />} >Agregar al carrito</Button>
+                </div>
             </div>
-            </div>
+        </div>
         );
 
 
