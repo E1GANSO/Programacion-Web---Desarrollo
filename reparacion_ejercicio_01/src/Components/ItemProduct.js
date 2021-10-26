@@ -1,21 +1,23 @@
 import Button from 'react-bootstrap/Button';
 import ListCart from '../pages/ListCart';
 
-function ItemProduct({id, nombre, marca, precio}){
+function ItemProduct(props){
+
+    const {id, nombre, marca, precio} = props.product;
 
     return(
         <div className="row" id="Color_Row">
             <div className="row">
                 <div className ="col">
-                    <p>Nombre: {nombre}</p>
+                    <p>NOMBRE: {nombre}</p>
                 </div>
                 <div className ="col">
-                    <p>Marca: {marca}</p>
+                    <p>MARCA: {marca}</p>
                 </div>
             </div>
             <div className="row">
                 <div className ="col">
-                    <h5>Precio ${precio}</h5>
+                    <h5>PRECIO ${precio}</h5>
                 </div>
             </div>
             <div className="row">
@@ -28,10 +30,6 @@ function ItemProduct({id, nombre, marca, precio}){
             </div>
         </div>
         );
-
-
-
-
 
 }
 

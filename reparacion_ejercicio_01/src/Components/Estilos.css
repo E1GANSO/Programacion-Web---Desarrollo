@@ -40,3 +40,7 @@
     width: 130px;
     overflow: auto;
 }
+
+#Color_Label{
+    color: white;
+}

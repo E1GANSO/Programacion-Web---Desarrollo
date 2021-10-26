@@ -1,13 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemProduct from './ItemProduct';
-import React from 'react';
+import React, {useState} from 'react';
+import AddProduct from './AddProduct';
 
 
 
 function GridProduct(){
     
 
-    const List_Product = [
+    const List_Product_Inicial = [
         {
             id: 1,
             nombre: "Arroz suelto",
@@ -69,24 +70,43 @@ function GridProduct(){
             precio: 3500
         }
         
-    ];
+    ]; 
 
-    /*
-    return (
-        <div className="col-md-4"> {List_Product.map(e=> (<ItemProduct nombre = {e.nombre}  marca = {e.marca} precio = {e.precio}/>))} </div>
-    );  
-    */
 
-    return(
+    const [products, setProdut] = useState(List_Product_Inicial);
+
+    const returnProductFrom = (ProductFrom)=>{
+        const idS = products.length + 1;
+        const product = {...ProductFrom, id:idS};
+        setProdut([...products, product]);
+    }
+
+
+    return(<>
+        <div className="row">
+                <AddProduct Agregar = {returnProductFrom}/>
+            </div>
         <section>
+            
             <div className="row">
-                {List_Product.map(e=> (<div className="col-4"> <ItemProduct id={e.id} nombre = {e.nombre}  marca = {e.marca} precio = {e.precio}/></div>))}
+                {products.map(e=> (<div className="col-4"> <ItemProduct product = {e}/></div>))}
             </div>
         </section>
+        </>
     );
 
     }
 
 
+
+    /*
+    return(
+            <section>
+                <div className="row">
+                    {List_Product.map(e=> (<div className="col-4"> <ItemProduct id={e.id} nombre = {e.nombre}  marca = {e.marca} precio = {e.precio}/></div>))}
+                </div>
+            </section>
+        );
+    */
 
 export default GridProduct;

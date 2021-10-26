@@ -26,7 +26,7 @@ const alEnviarForm = (studentFrom)=>{
 return(
   <>
     <Row>
-        <StudentForm agregar = {alEnviarForm}/>
+        <StudentForm Agregar = {alEnviarForm}/>
     </Row>
 
     <Row className ="border">
